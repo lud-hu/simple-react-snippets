@@ -1,9 +1,9 @@
 {
-  "name": "simple-react-snippets",
+  "name": "simple-react-snippets-ludwig",
   "displayName": "Simple React Snippets",
   "description": "Dead simple React snippets you will actually use",
-  "version": "1.2.3",
-  "publisher": "burkeholland",
+  "version": "1.2.4",
+  "publisher": "ludwig",
   "icon": "images/react-logo.png",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "Snippets"
   ],
   "activationEvents": [
-    "onCommand:extension.stayClassy"
+    "onCommand:extension.ludwig"
   ],
   "main": "./out/src/extension",
   "browser": "./out/src/extension",
@@ -46,7 +46,7 @@
     ],
     "commands": [
       {
-        "command": "extension.stayClassy",
+        "command": "extension.ludwig",
         "title": "React: class to className"
       }
     ]
@@ -54,7 +54,8 @@
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./",
-    "test": "node ./node_modules/@vscode/test-electron/out/runTest.js"
+    "test": "node ./node_modules/@vscode/test-electron/out/runTest.js",
+    "install-locally": "cp -r ./ ~/.vscode/extensions/ludwig-1.2.4"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.32",
